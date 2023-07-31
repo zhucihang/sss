@@ -1,27 +1,25 @@
-{
-    "name": "零点看书",
+
+    "name": "零点看书书",
     "url": "www.soruncg.com",
-    "version": 101,
+    "version": 100,
     "search": {
-        "url": "http://www.soruncg.com/ar.php?keyWord=${key}",
-        "charset": "utf-8",
-        "list": "ul>li:gt(0)",
-        "name": "span.s2",
-        "author": "span.s4",
-        "detail": "span.s2>a@attr->href@replace->"
+        "url": "http://http://www.soruncg.com/ar.php?keyWord=${key}",
+        "list": "tr:nth-child(n+2)",
+        "name": "td:nth-child(1)",
+        "author": "td:nth-child(3)",
+        "detail": "td:nth-child(1) > a"
     },
     "detail": {
-        "name": "div.catalog1 > h1",
-        "author": "div.tab > p.p1@replace->作者：->",
-        "cover": "div.catalog1 > div.tu > img@attr->src"
+        "cover": "#fmimg > img",
+        "summary": "#intro > p:nth-child(1)",
+        "update": "#info > p:nth-child(4)@match->(?<=最后更新 :).+"
     },
     "catalog": {
-        "list": "div.listmain > dl > dd",
+        "list": "#list > dl > dd",
         "name": "a",
-        "chapter": "a@attr->href"
+        "chapter": "a"
     },
     "chapter": {
-        "content": "#content",
-        "purify": ["请记住本书首发域名：www.dldxs.cc。都来读手机版阅读网址：m.dldxs.cc","https://www.dldxs.cc/xs/[0-9]*/[0-9]*.html"]
+        "content": "#content"
     }
 }
