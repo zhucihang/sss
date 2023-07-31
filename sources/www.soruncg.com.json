@@ -4,10 +4,10 @@
     "version": 100,
     "search": {
         "url": "http://http://www.soruncg.com/ar.php?keyWord=${key}",
-        "list": "tr:nth-child(n+2)",
-        "name": "td:nth-child(1)",
-        "author": "td:nth-child(3)",
-        "detail": "td:nth-child(1) > a"
+        "list": "lr:nth-child(n+2)",
+        "name": "span:nth-child(2)",
+        "author": "span:nth-child(1)",
+        "detail": "span:nth-child(1) > a"
     },
     "detail": {
         "cover": "#fmimg > img",
@@ -15,7 +15,7 @@
         "update": "#info > p:nth-child(4)@match->(?<=最后更新 :).+"
     },
     "catalog": {
-        "list": "#list > dl > dd",
+        "list": "#list > ul > lr",
         "name": "a",
         "chapter": "a"
     },
