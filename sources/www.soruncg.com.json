@@ -7,7 +7,7 @@
         "list": "lr:nth-child(n+2)",
         "name": "span:nth-child(2)",
         "author": "span:nth-child(1)",
-        "detail": "span:nth-child(1) > a"
+        "detail": "span:nth-child(1) > h2"
     },
     "detail": {
         "cover": "#fmimg > img",
@@ -16,8 +16,8 @@
     },
     "catalog": {
         "list": "#list > ul > lr",
-        "name": "a",
-        "chapter": "a"
+        "name": "h2",
+        "chapter": "h2"
     },
     "chapter": {
         "content": "#content"
