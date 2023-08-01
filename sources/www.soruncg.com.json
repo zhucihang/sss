@@ -1,8 +1,8 @@
 {
     "name": "零点看书",
     "url": "www.soruncg.com",
-    "version": 100
-    "search": {
+    "version": 100,
+	"search": {
         "url": "http://www.soruncg.com/ar.php?keyWord=${key}",
         "charset": "utf-8",
 		"list": "div.row > div.txt-list txt-list-row5",
