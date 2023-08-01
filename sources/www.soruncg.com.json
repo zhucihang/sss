@@ -1,14 +1,13 @@
-
+{
     "name": "零点看书",
     "url": "www.soruncg.com",
     "version": 100,
     "search": {
-        "url": "http://http://www.soruncg.com/ar.php?keyWord=${key}",
-        "list": "h2:nth-child(n+2)",
-        "charset": "utf-8"
-        "name": "h2:nth-child(2)",
-        "author": "h2:nth-child(1)",
-        "detail": "h2 > a"
+        "url": "http://www.soruncg.com/ar.php?keyWord=${key}",
+        "list": "tr:nth-child(n+2)",
+        "name": "td:nth-child(1)",
+        "author": "td:nth-child(3)",
+        "detail": "td:nth-child(1) > a"
     },
     "detail": {
         "cover": "#fmimg > img",
@@ -16,9 +15,9 @@
         "update": "#info > p:nth-child(4)@match->(?<=最后更新 :).+"
     },
     "catalog": {
-        "list": "#list > ul > lr",
-        "name": "h2",
-        "chapter": "h2"
+        "list": "#list > dl > dd",
+        "name": "a",
+        "chapter": "a"
     },
     "chapter": {
         "content": "#content"
