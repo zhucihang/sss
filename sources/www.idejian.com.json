@@ -1,0 +1,32 @@
+{
+    "name": "得间",
+    "url": "www.idejian.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.idejian.com/search?keyword=${key}",
+        "charset": "gbk",
+        "list": "ul.rank_ullist > li",
+        "name": ".rank_bkname > a",
+        "author": ".author",
+        "cover": ".book_img > img",
+        "detail": ".rank_bkname > a"
+    },
+    "detail": {
+        "name": "div.detail_bkname > a",
+        "author": "div.detail_bkauthor",
+        "cover": "a.book_img > img",
+        "summary": "div.brief_con",
+        "status": "span.light_box",
+        "update": "div.book_page > span",
+        "lastChapter": "div.book_page > div.link_name > a",
+        "catalog": "ul#catelog > li > a"
+    },
+    "catalog": {
+        "list": "ul#catelog > li > a",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "div.h5_mainbody >　ｐ"
+    }
+}
