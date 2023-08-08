@@ -1,0 +1,33 @@
+{
+    "name": "八六中文网",
+    "url": "www.86zw.co",
+    "version": 102,
+    "search": {
+        "url": "http://www.86zw.co/case.php?m=search@post->key=${key}",
+        "charset": "UTF-8",
+        "list": ".l>ul>li:gt(0)",
+        "name": ".s2",
+        "author": ".s4",
+        "detail": ".s2>a"
+    },
+    "detail": {
+        "name":"meta[property=og:novel:book_name]@attr->content",
+        "author":"meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "category":"meta[property=og:novel:category]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": "meta[property=og:novel:read_url]@attr->content"
+    },
+    "catalog": {
+        "list": "#list >dl >dt~dt~dd",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content",
+        "page": "a:matches(下一章)"
+    }
+}
