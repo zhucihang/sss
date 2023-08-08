@@ -1,0 +1,28 @@
+{
+    "name": "小说123",
+    "url": "www.xs123.org",
+    "version": 101,
+    "search": {
+        "url": "https://www.xs123.org/search.php?keyword=${key}",
+        "charset": "utf-8",
+        "list": "div.result-list > div.result-item.result-game-item",
+        "name": "div.result-game-item-detail>h3",
+        "author": "div.result-game-item-detail>div>p:eq(0)>span:eq(1)",
+        "detail": "div.result-game-item-detail>h3>a@attr->href@replace->m.xs123->www.xs123",
+        "cover": "div.result-game-item-pic>a>img@attr->src"
+    },
+    "detail": {
+        "name": "#info > h1",
+        "status": "#info > p:nth-child(3)",
+        "cover": "#fmimg > img",
+        "lastChapter": "#info > p:nth-child(5)"
+    },
+    "catalog": {
+        "list": "#list > dl > dd",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content"
+    }
+}
