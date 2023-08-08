@@ -1,0 +1,35 @@
+{
+  "name": "笔下文学",
+  "url": "www.bixia.org",
+  "version": 100,
+  "search": {
+    "url": "http://www.bixia.org/ar.php?keyWord=${key}",
+    "charset": "utf-8",
+    "list": ".search-list>li",
+    "name": ".name@match->.+(?=/)",
+    "author": ".author@match->(?<=/).+",
+    "cover": "",
+    "detail": "a"
+  },
+  "detail": {
+    "name": "meta[property=og:novel:book_name]@attr->content",
+    "author": "meta[property=og:novel:author]@attr->content",
+    "cover": "meta[property=og:image]@attr->content",
+    "summary": "meta[property=og:description]@attr->content",
+    "status": "meta[property=og:novel:status]@attr->content",
+    "update": "meta[property=og:novel:update_time]@attr->content",
+    "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+    "catalog": ""
+  },
+  "catalog": {
+    "list": "#main>ul>li",
+    "name": "a",
+    "chapter": "a",
+    "page": ".onclick:matches(下一页)@attr->href@match->(.+)(_)(.+)(.html)"
+  },
+  "chapter": {
+    "content": "#content",
+    "purify": [],
+    "page": "a:matches(下一页)@attr->href@match->(.+)(_)(.+)(.html)"
+  }
+}
