@@ -1,0 +1,23 @@
+{
+    "name": "齐齐读",
+    "url": "www.qqduu.com",
+    "version": 103,
+    "search": {
+        "url": "https://www.qqduu.com/sscc/@post->q=${key}",
+        "charset": "gb2312",
+        "list": "div.DivMargin",
+        "name": "a.Title > b > font",
+        "detail": "div.DivMargin > a.Title"
+    },
+    "catalog": {
+        "list": "#DivTitleList >div>span",
+        "name": "a",
+        "chapter": "a",
+        "page":"a:matches(查看《)"
+    },
+    "chapter": {
+        "content": "#zhidaoma>p",
+        "page": ".PagesLink:matches(下一页)"
+        
+    }
+}
