@@ -1,0 +1,27 @@
+{
+    "name": "着笔中文网",
+    "url": "www.zbzw.la",
+    "version": 101,
+    "search": {
+        "url": "https://www.zbzw.la/search.php?keyword=${key}",
+        "charset": "utf-8",
+        "list": "div.search_width > ul > li",
+        "name": "li > span.s2 > a",
+        "author": "li > span.s4",
+        "detail": "li > span.s2 > a@attr->href"
+    },
+    "detail": {
+        "name": "div.info > h2",
+        "status": "div.info > div.small > span:nth-child(2)",
+        "cover": "div.info > div.cover > img",
+        "lastChapter": "div.info > div.small > span:nth-child(5)"
+    },
+    "catalog": {
+        "list": "div.listmain > dl > dd",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content"
+    }
+}
